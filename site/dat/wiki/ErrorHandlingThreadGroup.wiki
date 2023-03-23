@@ -1,0 +1,26 @@
+= Error Handling Thread Group =
+
+<span class=''>[/?search=jpgc-errhndtg <i class='fa fa-download'></i> Download]</span>
+
+== Authorship ==
+
+This plugin was implemented by _[https://expleo.com/global/en/?utm_source=jmplinnerpages&utm_medium=cpc&utm_content=jmpininnerpgs&utm_campaign=JMeter%2BPlug%2BIn%2BWiki Expleo Solutions Limited.]_ and then contributed to community as Open Source.
+
+== Description ==
+
+This plugin allows the user to select a particular Transaction controller to be navigated when an error occurs in other words allows the user journey to be altered when an error occurs. This plugin is called as <b>Error Handling Thread Group</b>
+
+[/img/wiki/esl_Error_Handling_Thread_Group01.png]
+
+[/img/wiki/esl_Error_Handling_Thread_Group02.png]
+
+[/img/wiki/esl_Error_Handling_Thread_Group03.png]
+
+
+On selecting the “Go To Controller” option in the action to be taken after a sampler error, the Go To controller dropdown in error handling thread properties gets enabled.  The dropdown has options to select the transaction controllers added under the thread group.
+
+In the attached screenshot, Thread group has multiple transaction controllers Launch, Login, click_view(1..5), During load test execution when an error occurs in any of the steps like click_view1 and if the user has to navigate to logout, we can add toggle GoTo controller and select logout transaction controller in the error handling thread properties.
+
+[/img/wiki/esl_Error_Handling_Thread_Group04.png]
+
+On Execution an error occurred in ClearSession, instead of executing click-view-3,  click-view-4 & click-view-5, it had executed logout

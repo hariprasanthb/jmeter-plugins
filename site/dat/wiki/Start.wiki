@@ -28,6 +28,7 @@
   * [ConcurrencyThreadGroup Concurrency Thread Group] 
   * [ArrivalsThreadGroup Arrivals Thread Group] 
   * [FreeFormArrivalsThreadGroup Free-Form Arrivals Thread Group] 
+  * [ErrorHandlingThreadGroup Error Handling Thread Group] 
 
 == Timers ==
   * [ThroughputShapingTimer Throughput Shaping Timer]
